@@ -51,12 +51,14 @@ a:hover,
   outline: none;
 }
 
-.fas {
+.fas,
+.hdr h1 {
   cursor: pointer;
 }
 
 .fas:focus,
-.fas:hover{
+.fas:hover,
+.hdr h1:hover{
   color: goldenrod;
 }
 
@@ -280,7 +282,7 @@ h2{
 /*events desktop*/
 .events{
   display: grid;
-  grid-template-rows: 5rem min-content 1fr;
+  grid-template-rows: auto min-content 1fr;
   grid-auto-flow: column;
   justify-items: center;
   align-content: center;
@@ -319,6 +321,7 @@ h2{
 .about{
   display: grid;
   align-content: center;
+  align-items: center;
   grid-template-rows: min-content auto;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3rem;
