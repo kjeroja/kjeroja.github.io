@@ -1,3 +1,32 @@
+
+
+/*
+
+table of contents:
+
+1 Global styles (mobile)
+
+2 Typography (mobile)
+
+3 Layout (mobile)
+
+Desktop:
+
+4 typography (desktop)
+
+5 layout (desktop)
+
+*/
+
+
+
+
+
+
+/*#######################
+  GLOBAL STYLES (mobile)
+  ####################*/
+
 *{
   box-sizing: border-box;
   color: #333;
@@ -31,6 +60,16 @@ a:hover,
   color: goldenrod;
 }
 
+
+
+
+
+/*##################
+  TYPOGRAPHY (mobile)
+  ################*/
+
+
+
 h1{
   font-size: 2rem;
   letter-spacing: 3px;
@@ -38,6 +77,7 @@ h1{
 }
 
 h2{
+  text-align: center;
   color: gray;
   text-transform: uppercase;
   font-weight: 400;
@@ -56,6 +96,14 @@ p{
 }
 
 
+
+/*#######################
+  LAYOUT (mobile)
+  ####################*/
+
+
+
+/*grid mobile*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
@@ -73,7 +121,9 @@ p{
   margin-top: 5rem;
 }
 
-/*navbar*/
+
+
+/*navbar mobile*/
 .hdr{
   display: grid;
   align-items: center;
@@ -92,6 +142,7 @@ p{
 
 
 
+/*banner mobile*/
 .banner{
   grid-column: 1/4;
   overflow: hidden;
@@ -103,26 +154,40 @@ p{
   max-width: none;
 }
 
+/*events mobile*/
+.events{
+  display: grid;
+  justify-items: center;;
+}
 
+
+
+/*news mobile*/
 .news{
   grid-column: 1/4;
   height: 200px;
   background-image: url(pilt3.jpg);
   background-size: cover;
 }
+
 .news h2,
 .news p{
   color: #FFF;
+  text-align: left;
 }
-.news p{padding: 0 2rem;}
+
+.news p{
+  padding: 0 2rem;
+}
 
 
+
+/*footer mobile*/
 .ftr{
   padding: 2.5rem;
   background-color: #111;
   grid-column: 1/4;
 }
-
 
 .ftr a,
 .ftr h2,
@@ -132,17 +197,41 @@ address{
   padding: 0.7rem;
 }
 
+.ftr h2{
+  text-align: left;
+}
+
 .ftr a{
   display: block;
 }
 
 
+
+/*###################
+  DESKTOP STARTS:
+  ##################*/
 @media only screen and (min-width:700px ){
 
-.grid{
-  grid-template-rows: minmax(min-content, 100vh) minmax(min-content, 70vh) auto minmax(min-content, 81vh) minmax(min-content, 10vh);
+/*#############
+  TYPOGRAPHY (desktop)
+  ###########*/
+
+h2{
+  text-align: left;
 }
 
+
+/*###############
+  LAYOUT (desktop)
+##############*/
+
+
+
+/*grid desktop*/
+.grid{
+  grid-template-rows: 100vh minmax(min-content, 70vh) auto minmax(min-content, 81vh) minmax(min-content, 10vh);
+}
+/*reset margins*/
 .hdr,
 .events,
 .news,
@@ -151,6 +240,9 @@ address{
   margin-top: 0;
 }
 
+
+
+/*navbar desktop*/
 .hdr {
   position: fixed;
   left: 0;
@@ -162,10 +254,19 @@ address{
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 7;
 }
+
 .links{
   display: flex;
   justify-content: space-between;
   column-gap: 3rem;
+}
+
+
+
+/*banner desktop*/
+.banner{
+  height: 100%;
+  overflow: hidden;
 }
 
   .banner-img{
@@ -174,6 +275,9 @@ address{
     max-width: none;
   }
 
+
+
+/*events desktop*/
 .events{
   display: grid;
   grid-template-rows: 5rem min-content 1fr;
@@ -182,15 +286,23 @@ address{
   align-content: center;
   align-items: top;
 }
-.event{
-  grid-row: 3;
-  padding-bottom: 5rem;
-}
+
 .events h2{
   grid-row: 2;
   justify-self: left;
 }
 
+
+
+/*each event inside the events section*/
+.event{
+  grid-row: 3;
+  padding-bottom: 5rem;
+}
+
+
+
+/*news desktop*/
 .news{
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
@@ -201,11 +313,28 @@ address{
   grid-column: 2/3;
 }
 
+
+
+/*about desktop*/
 .about{
   display: grid;
   align-content: center;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
 }
 
+.about h2{
+  grid-row: 1;
+}
+
+.about > p{
+  grid-row: 2;
+}
+
+
+
+/*footer desktop*/
 .ftr{
   padding: 0;
   display: flex;
@@ -213,4 +342,6 @@ address{
   align-items: center;
 }
 
-}
+
+
+}/*mediaquery closed*/
