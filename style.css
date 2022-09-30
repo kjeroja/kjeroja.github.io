@@ -23,7 +23,6 @@ a{
 
 
 h1{
-  padding-top: 2rem;
   text-align: center;
   font-size: 2rem;
   letter-spacing: 3px;
@@ -37,13 +36,11 @@ h2{
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
-  padding-top: 2rem;
 }
 
 
 h3{
   text-align: center;
-  padding-top: 2rem;
   font-size: 1rem;
 }
 
@@ -67,7 +64,7 @@ p{
 .grid {
   display: grid;
   grid-template-columns: 1fr 90vw 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 20vh;
 }
 
 
