@@ -9,7 +9,7 @@
   display: grid;
   row-gap: 50px;
   grid-template-columns: 1fr 90vw 1fr;
-  grid-template-rows: 20vh 20vh 20vh 20vh 20vh auto;
+  grid-template-rows: auto;
 }
 
 .grid > * {
