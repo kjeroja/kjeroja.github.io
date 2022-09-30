@@ -1,20 +1,3 @@
-
-
-/*
-table of contents:
-1 Global styles (mobile)
-2 Typography (mobile)
-3 Layout (mobile)
-Desktop:
-4 typography (desktop)
-5 layout (desktop)
-*/
-
-
-
-
-
-
 /*#######################
   GLOBAL STYLES (mobile)
   ####################*/
@@ -24,10 +7,6 @@ Desktop:
   color: #333;
   margin: 0;
   font-family: "Roboto";
-}
-
-img{
-  max-width: 100%;
 }
 
 a{
@@ -44,7 +23,7 @@ a{
 
 
 h1{
-  padding-top: 3rem;
+  padding-top: 2rem;
   text-align: center;
   font-size: 2rem;
   letter-spacing: 3px;
@@ -58,13 +37,13 @@ h2{
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 
 h3{
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   font-size: 1rem;
 }
 
