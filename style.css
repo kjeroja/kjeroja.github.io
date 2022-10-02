@@ -15,3 +15,7 @@
 .grid > * {
   grid-column: 2/3;
 }
+
+h1, h2 {
+  text-align: centre;
+}
