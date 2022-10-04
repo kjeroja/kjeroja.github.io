@@ -31,6 +31,10 @@
   font-size: 2rem;
 }
 
+.nimi > em {
+  color: red;
+}
+
 h1 {
   font-size: 4rem;
 }
