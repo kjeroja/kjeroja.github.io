@@ -12,7 +12,9 @@
   grid-template-rows: auto;
 }
 
-
+.grid > * {
+  grid-column: 2/3;
+}
 
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
