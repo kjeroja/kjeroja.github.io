@@ -16,6 +16,14 @@
   grid-column: 2/3;
 }
 
+.KENT {
+  display: grid;
+}
+
+.KJELL {
+  display: grid;
+}
+
 h1, h2 {
   text-align: center;
 }
