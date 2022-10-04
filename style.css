@@ -7,7 +7,7 @@
 
 .grid {
   display: grid;
-  row-gap: 10px;
+  row-gap: 20px;
   grid-template-columns: 1fr 90vw 1fr;
   grid-template-rows: auto;
 }
