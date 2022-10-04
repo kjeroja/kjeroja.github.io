@@ -12,29 +12,9 @@
   grid-template-rows: auto;
 }
 
-.grid > * {
-  grid-column: 2/3;
-}
-
-.KENT {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.KJELL {
-  grid-template-columns: 1fr;
-  display: grid;
-}
-
-h1, h2 {
-  text-align: center;
-}
 
 
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
-  
-  /*grid desktop*/
-grid-template-columns: 1fr 70vw 1fr;
   
 }/*mediaquery closed*/
