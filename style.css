@@ -24,6 +24,7 @@
 .KJELL {
   display: grid;
   row-gap: 10px;
+  padding-top: 20vh;
 }
 
 .nimi {
