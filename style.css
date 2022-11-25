@@ -10,6 +10,7 @@
   row-gap: 20px;
   grid-template-columns: 1fr 90vw 1fr;
   grid-template-rows: auto;
+  padding-top: 12vh;
 }
 
 .grid > * {
@@ -24,7 +25,6 @@
 .KJELL {
   display: grid;
   row-gap: 10px;
-  padding-top: 12vh;
 }
 
 .nimi {
