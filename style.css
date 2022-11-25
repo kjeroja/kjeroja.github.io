@@ -23,7 +23,7 @@ body {
 
 .grid {
   display: grid;
-  row-gap: 20px;
+  row-gap: 30px;
   grid-template-columns: 1fr 90vw 1fr;
   grid-template-rows: auto;
   padding-top: 12vh;
