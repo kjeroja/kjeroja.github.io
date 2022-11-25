@@ -17,6 +17,10 @@ body {
   padding: 1rem;
 }
 
+#BUTTON {
+  background-color: red;
+}
+
 .grid {
   display: grid;
   row-gap: 20px;
