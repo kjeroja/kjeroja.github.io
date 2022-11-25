@@ -5,6 +5,10 @@
   font-family: "Roboto";
 }
 
+.KENT, .KJELL {
+  background-color: white;
+}
+
 .grid {
   display: grid;
   row-gap: 20px;
