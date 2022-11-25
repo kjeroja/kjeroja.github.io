@@ -1,3 +1,9 @@
+body {
+  background-image: url("crowd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 *{
   box-sizing: border-box;
   color: #333;
@@ -15,7 +21,6 @@
   grid-template-columns: 1fr 90vw 1fr;
   grid-template-rows: auto;
   padding-top: 12vh;
-  background-image: url("crowd.jpg");
 }
 
 .grid > * {
