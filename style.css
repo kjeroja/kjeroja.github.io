@@ -45,11 +45,8 @@ body {
   row-gap: 10px;
 }
 
-.nimi {
+h2 {
   font-size: 2rem;
-}
-
-.nimi > em {
   color: red;
 }
 
