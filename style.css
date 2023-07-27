@@ -15,7 +15,7 @@ body {
 .grid {
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
