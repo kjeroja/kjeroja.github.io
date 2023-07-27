@@ -22,9 +22,9 @@ body {
   padding-left-right: 10vh;
 }
 
-.left
-.middle
-.right
+.left {grid-column: 1;}
+.middle {grid-column: 2;}
+.right {grid-column: 2;}
 
 .title
 .body
