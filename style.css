@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  background-image: url("pilt2.jpg");
+  /*background-image: url("pilt2.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -21,10 +21,11 @@ body {
 .grid {
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 1fr 90vw 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  padding-left-right: 10vh;
 }
 
 .grid > * {
