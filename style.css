@@ -24,11 +24,19 @@ body {
 
 .left {grid-column: 1;}
 .middle {grid-column: 2;}
-.right
+.right {}
 
-.title {grid-row: 1;}
-.body {grid-row: 1;}
-.cta {grid-row: 2;}
+.title {grid-row: 1;
+       background-color: black;
+      font-color: white;
+       }
+.body {
+  grid-row: 1;
+  background-color: yellow;
+      }
+.cta {grid-row: 2;
+     background-color: green;
+     }
 
 h2, h3 {
   font: "Times New Roman";
