@@ -30,8 +30,7 @@ body {
 .body
 .cta
 
-h2 {
-  font-size: 2rem;
+h2, h3 {
   font: "Times New Roman";
 }
 
