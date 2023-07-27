@@ -11,8 +11,8 @@ body {
 .grid {
     display: grid;
     row-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1;
+    grid-template-rows: auto auto auto;
     padding: 10vh;
 }
 
@@ -35,5 +35,13 @@ body {
 @media only screen and (min-width:700px ){
 
 * {background-color: yellow;}
+
+  .grid {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 10vh;
+}
   
 }/*mediaquery closed*/
