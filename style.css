@@ -12,12 +12,6 @@ body {
   font-family: "Roboto";
 }
 
-
-#BUTTON {
-  background-color: red;
-  padding: 0.5rem;
-}
-
 .grid {
   display: grid;
   row-gap: 20px;
@@ -28,17 +22,13 @@ body {
   padding-left-right: 10vh;
 }
 
-.grid > * {
-  grid-column: 2/3;
-}
+.left
+.middle
+.right
 
-
-.YES {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 1rem;
-  display: grid;
-  row-gap: 10px;
-}
+.title
+.body
+.cta
 
 h2 {
   font-size: 2rem;
