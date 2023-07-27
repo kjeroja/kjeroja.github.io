@@ -26,9 +26,9 @@ body {
 .middle {grid-column: 2;}
 .right
 
-.title
-.body
-.cta
+.title {grid-row: 1;}
+.body {grid-row: 1;}
+.cta {grid-row: 2;}
 
 h2, h3 {
   font: "Times New Roman";
