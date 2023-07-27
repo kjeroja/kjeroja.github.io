@@ -22,8 +22,8 @@ body {
   padding-left-right: 10vh;
 }
 
-.left {grid-column: 1;}
-.middle {grid-column: 2;}
+.left {grid-column: 1/2;}
+.middle {grid-column: 2/2;}
 .right
 
 .title
