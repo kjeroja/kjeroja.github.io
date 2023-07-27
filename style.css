@@ -21,29 +21,21 @@ body {
 
 .a {
       grid-column: 1;
-      grid-row: 1/span 2;
-      background-color: black;
-      color: white;
+      grid-row: 1;
       }
 
 .b {
       grid-column: 2;
       grid-row: 1;
-      background-color: yellow;
       }
 
 .b {
       grid-column: 2;
       grid-row: 2;
-      background-color: green;
       }
 
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
 
-.grid {
-  grid-template-column: 1;
-  grid-template-rows: auto auto auto;
-}
   
 }/*mediaquery closed*/
