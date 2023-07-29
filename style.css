@@ -11,15 +11,27 @@ body {
 .grid {
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr 90vw 1fr;
   grid-template-rows: auto auto auto;
-  padding: 10vh;
+  padding-top: 10vh;
   }
 
 h1 {
   font-size: 3rem;
   font-family: "Times  New Roman";
 }
+
+.a {
+  grid-column: 2;
+  }
+
+.b {
+  grid-column: 2;
+  }
+
+.c {
+  grid-column: 2;
+  }
 
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
@@ -30,6 +42,8 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
+  padding-sides: 10vw;
+  Padding-top: 10vh;
   }
 
 .a {
