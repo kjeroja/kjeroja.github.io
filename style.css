@@ -34,6 +34,8 @@ h1 {
   grid-column: 2;
   }
 
+.c > div {padding-bottom: 1rem;}
+
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
 
