@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Times New Roman", times, serif;
+  font-family: "Times New Roman", serif;
   text-transform: uppercase;
 }
 
@@ -68,10 +68,8 @@ p {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 4.4rem;
     font-family: "Times New Roman";
-
-    color: #f1c232;
   }
   
 }/*mediaquery closed*/
