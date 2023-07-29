@@ -55,6 +55,7 @@ p {
 .a {
   grid-column: 1;
   grid-row: 1/span 2;
+      background-color: black;
   }
 
 .b {
@@ -70,7 +71,7 @@ p {
   h1 {
     font-size: 4rem;
     font-family: "Times New Roman";
-    background-color: black;
+
     color: white;
   }
   
