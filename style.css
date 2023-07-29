@@ -6,6 +6,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: "Roboto";
+  color: white;
+  background-color: black;
   }
 
 .grid {
