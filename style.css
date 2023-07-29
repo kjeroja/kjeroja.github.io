@@ -14,7 +14,7 @@ body {
   grid-template-columns: 1fr 80vw 1fr;
   grid-template-rows: 80vh auto auto;
   padding-top: 10vh;
-  padding-bot: 10vh;
+  padding-bottom: 10vh;
   }
 
 h1 {
