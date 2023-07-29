@@ -36,8 +36,6 @@ h1 {
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
 
-* {background-color: yellow;}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
