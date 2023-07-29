@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-size: 2.7rem;
-  font-family: "Times New Roman";
+  font-family: "Times New Roman", times, serif;
   text-transform: uppercase;
 }
 
