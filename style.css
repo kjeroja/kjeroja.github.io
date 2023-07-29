@@ -23,7 +23,8 @@ h1 {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.5;
+  color: #333;
 }
 
 .a {
@@ -68,7 +69,6 @@ p {
   h1 {
     font-size: 5rem;
     font-family: "Times New Roman";
-    text-align: right;
   }
   
 }/*mediaquery closed*/
