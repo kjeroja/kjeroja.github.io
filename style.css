@@ -22,6 +22,10 @@ h1 {
   font-family: "Times New Roman";
 }
 
+p {
+  line-height: 2;
+}
+
 .a {
   grid-column: 2;
   }
