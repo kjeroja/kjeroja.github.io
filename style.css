@@ -11,14 +11,14 @@ body {
 .grid {
   display: grid;
   row-gap: 20px;
-  grid-template-columns: 1fr 90vw 1fr;
+  grid-template-columns: 1fr 80vw 1fr;
   grid-template-rows: auto auto auto;
   padding-top: 10vh;
   }
 
 h1 {
   font-size: 3rem;
-  font-family: "Times  New Roman";
+  font-family: "Times New Roman";
 }
 
 .a {
@@ -42,8 +42,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  padding-sides: 10vw;
-  Padding-top: 10vh;
+  padding: 10vw;
   }
 
 .a {
@@ -63,7 +62,7 @@ h1 {
 
   h1 {
     font-size: 5rem;
-    font-family: "Times  New Roman";
+    font-family: "Times New Roman";
   }
   
 }/*mediaquery closed*/
