@@ -30,8 +30,7 @@ p {
 
 .a {
   grid-column: 2;
-  /*background-image: url("Clight.jpg");
-  background-size: cover;*/
+
   }
 
 .b {
@@ -69,6 +68,13 @@ p {
   grid-column: 2;
   grid-row: 2;
   }
+
+.d {
+  grid-column: 2/ span 2;
+  grid-row: 3;
+  background-image: url("CW.jpg");
+  background-size: cover;
+}
 
   h1 {
     font-size: 4.4rem;
