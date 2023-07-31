@@ -31,6 +31,7 @@ p {
 .a {
   grid-column: 2;
   background-image: url("side1.jpg");
+  background-size: cover;
   }
 
 .b {
