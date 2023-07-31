@@ -30,6 +30,7 @@ p {
 
 .a {
   grid-column: 2;
+  background-image: "side1.jpg";
   }
 
 .b {
