@@ -53,6 +53,7 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   padding: 10vw;
+  grid-column-gap: 50px;
   }
 
 .a {
