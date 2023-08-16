@@ -19,7 +19,7 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Times New Roman", serif;
+  font-family: "Roboto serif", serif;
   text-transform: uppercase;
 }
 
@@ -72,7 +72,7 @@ p {
 
   h1 {
     font-size: 5rem;
-    font-family: "Times New Roman";
+    font-family: "Roboto serif", serif;
   }
   
 }/*mediaquery closed*/
