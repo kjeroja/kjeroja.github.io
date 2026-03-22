@@ -64,15 +64,6 @@ p {
 
 .a {
   grid-column: 2;
-
-  }
-
-.b {
-  grid-column: 2;
-  }
-
-.c {
-  grid-column: 2;
   }
 
 .c > div {padding-bottom: 1rem;}
