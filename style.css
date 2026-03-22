@@ -23,6 +23,13 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.super {
+  font-family: "Playfair Display SC", serif;
+  vertical-align: super;
+  font-size: 0.6em;      /* Makes the letter smaller */
+  line-height: 0;        /* CRITICAL: Prevents the superscript from adding height to the line */
+  margin-left: 2px;      /* Optional: adds a tiny bit of breathing room */
+}
 
 h2 {
   font-size: 1rem;
