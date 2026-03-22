@@ -69,8 +69,7 @@ h5 {
   display: flex;             /* The Magic: Aligns children horizontally */
   justify-content: center;   /* Centers the entire group of boxes on the page */
   gap: 0px;                  /* Creates space *between* the boxes */
-  margin-top: 1.5rem;        /* Adds space between the h2 title and the boxes */
-  margin-bottom: 3rem;     /* Adds space after the boxes (before your contact links) */
+  margin-top: 1rem;        /* Adds space between the h2 title and the boxes */
 }
 
 /* 2. The Boxes Themselves */
