@@ -56,6 +56,23 @@ h5 {
   color: #8A8E74;
 }
 
+/* 1. The Container (The space where the boxes live) */
+.palette {
+  display: flex;             /* The Magic: Aligns children horizontally */
+  justify-content: center;   /* Centers the entire group of boxes on the page */
+  gap: 12px;                  /* Creates space *between* the boxes */
+  margin-top: 1.5rem;        /* Adds space between the h2 title and the boxes */
+  margin-bottom: 3rem;     /* Adds space after the boxes (before your contact links) */
+}
+
+/* 2. The Boxes Themselves */
+.color-box {
+  width: 50px;               /* The precise width of the square */
+  height: 50px;              /* The precise height (must match width to be a square) */
+  /* Optional: Add a subtle border if you have light colors (like the cream) on a white page */
+  /* border: 1px solid #e0e0e0; */
+}
+
 p {
   line-height: 1.5;
   /*color: #333;*/
