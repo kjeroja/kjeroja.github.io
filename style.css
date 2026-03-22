@@ -74,8 +74,8 @@ h5 {
 
 /* 2. The Boxes Themselves */
 .color-box {
-  width: 50px;               /* The precise width of the square */
-  height: 50px;              /* The precise height (must match width to be a square) */
+  width: 20px;               /* The precise width of the square */
+  height: 20px;              /* The precise height (must match width to be a square) */
   /* Optional: Add a subtle border if you have light colors (like the cream) on a white page */
   /* border: 1px solid #e0e0e0; */
 }
