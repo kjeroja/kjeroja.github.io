@@ -17,6 +17,8 @@ body {
   padding-bottom: 10vh;
   }
 
+
+
 h1 {
   font-size: 2.5rem;
   font-family: "Playfair Display SC", serif;
@@ -27,6 +29,12 @@ h2 {
   font-size: 2rem;
   font-family: "Playfair Display SC", serif;
   font-weight: 700;
+}
+
+h2, h3 {
+  display: inline-block; 
+  vertical-align: middle;
+  margin-right: 15px; /* Space between them */
 }
 
 h3 {
