@@ -23,6 +23,32 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 2rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-color: #C4C7B1;
+}
+
 p {
   line-height: 1.5;
   /*color: #333;*/
