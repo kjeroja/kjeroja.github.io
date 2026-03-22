@@ -94,11 +94,5 @@ p {
   grid-column: 2;
   grid-row: 2;
   }
-
-
-  h1 {
-    font-size: 5rem;
-    font-family: "Roboto serif", serif;
-  }
   
 }/*mediaquery closed*/
