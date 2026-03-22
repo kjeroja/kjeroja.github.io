@@ -68,7 +68,7 @@ h5 {
 /* 1. The Container (The space where the boxes live) */
 .palette {
   display: flex;             /* The Magic: Aligns children horizontally */
-  justify-content: center;   /* Centers the entire group of boxes on the page */
+  justify-content: left;   /* Centers the entire group of boxes on the page */
   gap: 0px;                  /* Creates space *between* the boxes */
   margin-top: 1rem;        /* Adds space between the h2 title and the boxes */
 }
