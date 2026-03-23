@@ -23,7 +23,8 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  padding-bottom: 10vh;
+  padding-bottom: 40vh;
+  paddding-top: 40vh;
 }
 .super {
   font-family: "Playfair Display SC", serif;
