@@ -1,109 +1,204 @@
-<!doctype html>
-<html>
+body {
+  height: 100%;
+  }
 
-<head>
-<title>Kirsika & Kjell</title>
-<meta charset="utf-8">
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Crimson Pro";
+line-height: 1.6;
+  }
 
-<!--media query for responsive design:-->
-<meta name="viewport" content="width=device-width, inital-scale=1.0">
+.grid {
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: 1fr 80vw 1fr;
+  grid-template-rows: auto auto auto;
+  padding-bottom: 10vh;
+  }
 
-<!--keywords-->
-<meta name="keywords" content="Standard website template">
-<meta name="description" content="Standard website template">
+h1 {
+  font-size: 4rem;
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  Color: white;
+}
 
-<!--fonts:-->
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+P {
+color: white;
+Text-align: center;
+Grid-column: 2;
+Font-family: "Crimson Pro", serif;
+letter-spacing: 0.25em;
+}
 
-<!--link to CSS:-->
-<link href="./style.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+.super {
+  font-family: "Playfair Display SC", serif;
+  vertical-align: super;
+  font-size: 0.6em;      /* Makes the letter smaller */
+  margin-left: 2px;      /* Optional: adds a tiny bit of breathing room */
+}
+.banner {
+  padding-top: 25vh;
+  padding-bottom: 45vh;
+  Background-color: #7e8269;
+  grid-column: span 3;
+  grid-row: 1;}
 
-<div class="grid">
+.d {
+  Padding-top: 20px;
+}
 
-<!-- title -->
-<div class="banner">
-<h1>K<span class="super">2</span></h1>
-<p>Kirsika & Kjell</p>
-</div>
-<!-- title -->
+.indent {
+Padding-left: 10px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+}
+
+h2, h3 {
+  display: inline-block; 
+  vertical-align: middle;
+  margin-right: 15px; /* Space between them */
+  letter-spacing: 0.25em; 
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  color: #8A8E74;
+}
+
+/* 1. The Container (The space where the boxes live) */
+.palette {
+  display: flex;             /* The Magic: Aligns children horizontally */
+  justify-content: left;   /* Centers the entire group of boxes on the page */
+  gap: 14px;                  /* Creates space *between* the boxes */
+  margin-top: 1rem;        /* Adds space between the h2 title and the boxes */
+}
+
+/* 2. The Boxes Themselves */
+.color-box {
+  width: 25px;               /* The precise width of the square */
+  height: 25px;              /* The precise height (must match width to be a square) */
+  /* Optional: Add a subtle border if you have light colors (like the cream) on a white page */
+  /* border: 1px solid #e0e0e0; */
+Border-radius: 100%;
+}
+
+.rsvp-container {
+  text-align: center;
+}
+
+.btn-rsvp {
+  /* Colors from your Peach/Sage palette */
+  background-color: #D5AA95; /* Light Cream/Peach */
+  color: white;           /* Sage Green text */
+  border: 0px solid #7e8269;
+  border-radius: 0px 20px 0px 20px;
   
-<!-- pulmapäev -->
-<div class="a d">
-<h2>Pulmapäev</h2>
-<h3>16.05.2026</h3>
-<p></p> 
-</div>
-<!-- pulmapäev end -->  
-
-<!-- laulatus -->
-<div class="a indent">
-<h2>Laulatus</h2>
-<h3>14:00</h3>
-<h4>viimsi püha jaakobi kirik</h4> 
-<h5> nurme tee 2, haabneeme</h5>
-</div>
-<!-- laulatus end -->  
-
-<!-- pidu -->
-<div class="a indent">
-<h2>Pidu</h2>
-<h3>17:00</h3>
-<h4>tallinna botaanikaaia palmimaja peosaal</h4> 
-<h5> kloostrimetsa tee 52, tallinn</h5>
-</div>
-<!-- pidu end -->  
-
-<!-- pulmavärvid -->
-<div class="a indent">
-<h2>Pulmavärvid</h2>
-<h4>inspiratsiooniks riiete valikul</h4> 
-<div class="palette">
-  <div class="color-box" style="background-color: #8A8E74;"></div> 
-  <div class="color-box" style="background-color: #C4C7B1;"></div> 
-  <div class="color-box" style="background-color: #F2EBD8;"></div> 
-  <div class="color-box" style="background-color: #F0D7C6;"></div> 
-  <div class="color-box" style="background-color: #D5AA95;"></div>
-</div>
-</div>
-<!-- pulmavärvid end -->  
-
-<!-- registreerimie -->
-
-<div class="form-container">
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSejs6oOMHodY2JM1J_fHksP4U-ZkC2LwvwOFIUbfJH_yZWGjg/viewform?embedded=true" 
-    width="100%" 
-    height="800" 
-    frameborder="0" 
-    marginheight="0" 
-    marginwidth="0">
-    Laadimine…
-  </iframe>
-</div>
-<!-- registreerimine end -->  
+  /* Typography */
+  font-family: "Playfair Display SC", serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
   
-<!-- social media 
-<div class="a">
-<h3></h3>
-<a href="mailto:kjell.rodal.jalasto@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
-<a href="https://www.instagram.com/kkjjeellll"><i class="fa-brands fa-square-instagram"></i></a>
-<a href="https://www.facebook.com/kjellemannn"><i class="fa-brands fa-square-facebook"></i></a>
-</div>
-</div>
- social media end-->
+  /* Spacing & "Kerning" */
+  padding: 15px 40px;
+  letter-spacing: 0.3em;    /* Your 300 tracking */
+  line-height: 1;           /* Tight line height for buttons */
   
-</div>
-</body>
-</html>
+  /* Interaction */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-rsvp:hover {
+  background-color: #7e8269; /* Flip colors on hover */
+  color: #f7f3ed;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.form-container {
+grid-column: 2;
+position: relative;
+  width: 100%;
+  margin: 0 auto;   /* Centers the form on the page */
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+}
+}
+
+p {
+  line-height: 1.5;
+  /*color: #333;*/
+}
+
+.a {
+  grid-column: 2;
+  }
+
+.c > div {padding-bottom: 1rem;}
+
+/*### DESKTOP STARTS ###*/
+@media only screen and (min-width:700px ){
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: auto auto auto auto;
+  padding: 0;
+  grid-column-gap: 10px;
+  }
+
+.d {
+Padding-top: 100px;
+}
+
+.a {
+  grid-column: 2;
+  grid-row: auto;
+  Padding-left: 100px;
+  }
+
+.banner {
+  padding-top: 25vh;
+  padding-bottom: 0vh;
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 5;
+
+  }
+
+.form-container {
+Padding-top: 100px;
+Grid-column: 3;
+Grid-row-start: 1;
+Grid-row-end: 5;
+min-width: 300px;
+}
+
+  
+}/*mediaquery closed*/
