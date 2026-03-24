@@ -171,6 +171,7 @@ p {
   grid-template-rows: auto auto auto auto;
   padding: 0;
   grid-column-gap: 10px;
+  height: 100vh;
   }
 
 .d {
