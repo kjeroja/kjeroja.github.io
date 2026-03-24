@@ -142,12 +142,7 @@ Border-radius: 100%;
 grid-column: 2;
 position: relative;
   width: 100%;
-  max-width: 700px; /* Keeps the form from getting too wide on desktop */
   margin: 0 auto;   /* Centers the form on the page */
-  padding: 20px;
-  background-color: #f7f3ed; /* Matches your Peach/Cream background */
-  border-radius: 15px;      /* Matches your rounded button style */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Optional: soft shadow */
 }
 
 iframe {
@@ -172,25 +167,38 @@ p {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  padding: 7vw;
-  grid-column-gap: 50px;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: auto auto auto auto;
+  padding: 0;
+  grid-column-gap: 10px;
   }
+
+.d {
+Padding-top: 100px;
+}
 
 .a {
+  grid-column: 2;
+  grid-row: auto;
+  Padding-left: 100px;
+  }
+
+.banner {
+  padding-top: 25vh;
+  padding-bottom: 0vh;
   grid-column: 1;
-  grid-row: 1/span 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+
   }
 
-.b {
-  grid-column: 2;
-  grid-row: 1;
-  }
+.form-container {
+Padding-top: 100px;
+Grid-column: 3;
+Grid-row-start: 1;
+Grid-row-end: 5;
+min-width: 300px;
+}
 
-.c {
-  grid-column: 2;
-  grid-row: 2;
-  }
   
 }/*mediaquery closed*/
