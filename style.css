@@ -230,5 +230,18 @@ Grid-row-end: 5;
 min-width: 300px;
 }
 
+  #wedding-rsvp-form {
+  display: flex;
+  flex-direction: column; /* This stacks Name, Attendance, and Message vertically */
+  max-width: 400px;       /* Keeps it from getting too wide on big screens */
+  gap: 15px;              /* Adds nice spacing between inputs */
+}
+
+.rsvp-container {
+  grid-column: 1 / -1;    /* Forces it to take up the whole width or a specific spot */
+  padding: 40px;
+  text-align: center;
+}
+
   
 }/*mediaquery closed*/
