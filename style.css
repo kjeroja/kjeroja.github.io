@@ -238,7 +238,7 @@ min-width: 300px;
 }
 
 .rsvp-container {
-  grid-column: 1 / -1;    /* Forces it to take up the whole width or a specific spot */
+  grid-column: 3;    /* Forces it to take up the whole width or a specific spot */
   padding: 40px;
   text-align: center;
 }
