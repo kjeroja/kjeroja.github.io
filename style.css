@@ -124,6 +124,7 @@ p {
   max-width: 450px;
   margin: 0 auto;
   font-family: serif;
+  grid-column: 2;
 }
 
 input, select, textarea {
