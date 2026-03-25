@@ -105,52 +105,6 @@ h5 {
 Border-radius: 100%;
 }
 
-.rsvp-container {
-  text-align: center;
-}
-
-.btn-rsvp {
-  /* Colors from your Peach/Sage palette */
-  background-color: #D5AA95; /* Light Cream/Peach */
-  color: white;           /* Sage Green text */
-  border: 0px solid #7e8269;
-  border-radius: 0px 20px 0px 20px;
-  
-  /* Typography */
-  font-family: "Playfair Display SC", serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  
-  /* Spacing & "Kerning" */
-  padding: 15px 40px;
-  letter-spacing: 0.3em;    /* Your 300 tracking */
-  line-height: 1;           /* Tight line height for buttons */
-  
-  /* Interaction */
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn-rsvp:hover {
-  background-color: #7e8269; /* Flip colors on hover */
-  color: #f7f3ed;
-  transform: translateY(-2px); /* Subtle lift effect */
-}
-
-.form-container {
-grid-column: 2;
-position: relative;
-  width: 100%;
-  margin: 0 auto;   /* Centers the form on the page */
-}
-
-iframe {
-  border: none;
-  border-radius: 10px;
-}
-}
-
 p {
   line-height: 1.5;
   /*color: #333;*/
@@ -219,16 +173,7 @@ Padding-top: 100px;
   grid-column: 1;
   grid-row-start: 1;
   grid-row-end: 5;
-
   }
-
-.form-container {
-Padding-top: 100px;
-Grid-column: 3;
-Grid-row-start: 1;
-Grid-row-end: 5;
-min-width: 300px;
-}
 
   #wedding-rsvp-form {
   display: flex;
@@ -239,6 +184,7 @@ min-width: 300px;
 
 .rsvp-container {
   grid-column: 3;    /* Forces it to take up the whole width or a specific spot */
+  grid-row: 1; 
   padding: 40px;
   text-align: center;
 }
