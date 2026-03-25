@@ -162,6 +162,35 @@ p {
 
 .c > div {padding-bottom: 1rem;}
 
+.rsvp-container {
+  background-color: #f7f3ed; /* Peach background */
+  border: 1px solid #7e8269; /* Sage border */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 450px;
+  margin: 0 auto;
+  font-family: serif;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #7e8269;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.btn-rsvp {
+  background-color: #7e8269; /* Sage button */
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
 
