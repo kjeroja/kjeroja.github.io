@@ -83,19 +83,50 @@
 <div class="rsvp-container">
   <h2>RSVP</h2>
   <form id="wedding-rsvp-form">
-    <input type="text" name="Name" placeholder="Teie nimed" required>
+    <input type="text" name="Name1" placeholder="Teie nimi" required>
+    <input type="email" name="Email1" placeholder="Teie e-post" required>
     
+    <label>Kas tuled kellegagi koos, kes on ka kutsutud?</label>
+    <select name="HasPlusOne" id="has-plus-one" required>
+      <option value="Ei">Ei</option>
+      <option value="Jah">Jah</option>
+    </select>
+
+    <div id="plus-one-section" style="display:none; border-top: 1px solid #7e8269; pt-10">
+      <input type="text" name="Name2" placeholder="Kaaslase nimi">
+      <input type="email" name="Email2" placeholder="Kaaslase e-post">
+    </div>
+
     <select name="Attendance" required>
-      <option value="" disabled selected>Kas tulete?</option>
-      <option value="Jah">Oleme kohal!</option>
+      <option value="" disabled selected>Osalus</option>
+      <option value="Jah">Tulemas!</option>
       <option value="Ei">Kahjuks ei saa tulla</option>
     </select>
+
+    <label>Tulen autoga</label>
+    <select name="HasCar" id="has-car" required>
+      <option value="Ei">Ei</option>
+      <option value="Jah">Jah</option>
+    </select>
+
+    <div id="car-section" style="display:none;">
+      <label>Vabu istekohti autos:</label>
+      <select name="Seats">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+
+    <textarea name="Diet" placeholder="Toiduerisoovid või teade pruutpaarile"></textarea>
     
-    <textarea name="Diet" placeholder="Toiduerisoovid (või muud märkused)"></textarea>
-    
-    <button type="submit" id="submit-btn" class="btn-rsvp">KINNITA OSALUS</button>
+    <button type="submit" id="submit-btn" class="btn-rsvp">SAADA VASTUS</button>
   </form>
-  <div id="success-msg" style="display:none; color: #7e8269;">Aitäh! Saatsime teile kinnituseks meili.</div>
+  <div id="success-msg" style="display:none;">Aitäh! Sinu vastus on salvestatud.</div>
 </div>
 <!-- registreerimine end -->  
   
@@ -132,6 +163,18 @@ form.addEventListener('submit', e => {
         btn.disabled = false;
         btn.innerHTML = "SAADA VASTUS";
     });
+});
+
+  // Toggle Plus One Section
+document.getElementById('has-plus-one').addEventListener('change', function() {
+  const section = document.getElementById('plus-one-section');
+  section.style.display = this.value === 'Jah' ? 'block' : 'none';
+});
+
+// Toggle Car Section
+document.getElementById('has-car').addEventListener('change', function() {
+  const section = document.getElementById('car-section');
+  section.style.display = this.value === 'Jah' ? 'block' : 'none';
 });
   </script>
 
