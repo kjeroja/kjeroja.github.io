@@ -144,6 +144,55 @@ input, select, textarea {
   border-radius: 0 25px 0 25px;
 }
 
+/* Hide the actual radio circle */
+.toggle-group input[type="radio"] {
+  display: none;
+}
+
+.toggle-group {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0 20px 0;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #7e8269;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background: white;
+  color: #7e8269;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+/* When the "Jah" radio is checked, turn the label Sage */
+#att-yes:checked + .toggle-btn.yes,
+#plus-yes:checked + .toggle-btn.yes,
+#car-yes:checked + .toggle-btn.yes {
+  background-color: #7e8269;
+  color: white;
+}
+
+/* When the "Ei" radio is checked, turn the label Peach/Tan */
+#att-no:checked + .toggle-btn.no,
+#plus-no:checked + .toggle-btn.no,
+#car-no:checked + .toggle-btn.no {
+  background-color: #D5AA95;
+  color: white;
+  border-color: #D5AA95;
+}
+
+.toggle-label {
+  display: block;
+  font-family: "Crimson Pro", serif;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 15px;
+}
+
 /*### DESKTOP STARTS ###*/
 @media only screen and (min-width:700px ){
 
