@@ -184,7 +184,8 @@ Padding-top: 100px;
 
 .rsvp-container {
   grid-column: 3;    /* Forces it to take up the whole width or a specific spot */
-  grid-row: 1; 
+  grid-row-start: 1;
+  grid-row-end: 5;
   padding: 40px;
   text-align: center;
 }
