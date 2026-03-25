@@ -117,8 +117,6 @@ p {
 .c > div {padding-bottom: 1rem;}
 
 .rsvp-container {
-  background-color: #f7f3ed; /* Peach background */
-  border: 1px solid #7e8269; /* Sage border */
   padding: 30px;
   border-radius: 15px;
   max-width: 450px;
