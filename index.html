@@ -92,6 +92,25 @@
     Laadimine…
   </iframe>
 </div>
+  
+<div class="rsvp-container">
+  <h2>RSVP</h2>
+  <form id="wedding-rsvp-form">
+    <input type="text" name="Name" placeholder="Teie nimed" required>
+    
+    <select name="Attendance" required>
+      <option value="" disabled selected>Kas tulete?</option>
+      <option value="Jah">Oleme kohal!</option>
+      <option value="Ei">Kahjuks ei saa tulla</option>
+    </select>
+    
+    <textarea name="Diet" placeholder="Toiduerisoovid (või muud märkused)"></textarea>
+    
+    <button type="submit" id="submit-btn" class="btn-rsvp">SAADA VASTUS</button>
+  </form>
+  <div id="success-msg" style="display:none; color: #7e8269;">Aitäh! Teie vastus on käes.</div>
+</div>
+  
 <!-- registreerimine end -->  
   
 <!-- social media 
@@ -105,5 +124,29 @@
  social media end-->
   
 </div>
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzxSUMjwbTrrHpkK2mlotOlmyaJITJ0w6ntzUS2OiIyyk9gqetFgWIvLVL6YbbxvvGn/exec'; // Paste your Web App URL here
+const form = document.getElementById('wedding-rsvp-form');
+const btn = document.getElementById('submit-btn');
+const msg = document.getElementById('success-msg');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  btn.disabled = true;
+  btn.innerHTML = "SAADAN...";
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        form.style.display = 'none'; // Hide form on success
+        msg.style.display = 'block'; // Show thank you message
+    })
+    .catch(error => {
+        alert('Midagi läks valesti. Proovi uuesti!');
+        btn.disabled = false;
+        btn.innerHTML = "SAADA VASTUS";
+    });
+});
+
+  
 </body>
 </html>
