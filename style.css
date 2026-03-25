@@ -141,6 +141,7 @@ input, select, textarea {
   width: 100%;
   cursor: pointer;
   letter-spacing: 0.1em;
+  border-radius: 0 25px 0 25px;
 }
 
 /*### DESKTOP STARTS ###*/
