@@ -150,54 +150,45 @@
 </div>
 
   <script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzxSUMjwbTrrHpkK2mlotOlmyaJITJ0w6ntzUS2OiIyyk9gqetFgWIvLVL6YbbxvvGn/exec'; // Paste your Web App URL here
-const form = document.getElementById('wedding-rsvp-form');
-const btn = document.getElementById('submit-btn');
-const msg = document.getElementById('success-msg');
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzxSUMjwbTrrHpkK2mlotOlmyaJITJ0w6ntzUS2OiIyyk9gqetFgWIvLVL6YbbxvvGn/exec';
+  const form = document.getElementById('wedding-rsvp-form');
+  const btn = document.getElementById('submit-btn');
+  const msg = document.getElementById('success-msg');
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  btn.disabled = true;
-  btn.innerHTML = "SAADAN...";
+  // 1. Handling the Form Submission
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.innerHTML = "SAADAN...";
 
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-        form.style.display = 'none'; // Hide form on success
-        msg.style.display = 'block'; // Show thank you message
-    })
-    .catch(error => {
-        alert('Midagi läks valesti. Proovi uuesti!');
-        btn.disabled = false;
-        btn.innerHTML = "SAADA VASTUS";
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          form.style.display = 'none'; 
+          msg.style.display = 'block'; 
+      })
+      .catch(error => {
+          alert('Midagi läks valesti. Proovi uuesti!');
+          btn.disabled = false;
+          btn.innerHTML = "SAADA VASTUS";
+      });
+  });
+
+  // 2. Toggle Plus One Section (Radio Logic)
+  document.querySelectorAll('input[name="HasPlusOne"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const section = document.getElementById('plus-one-section');
+      section.style.display = (this.value === 'Jah') ? 'block' : 'none';
     });
-});
-
-  // Toggle Plus One Section
-document.getElementById('has-plus-one').addEventListener('change', function() {
-  const section = document.getElementById('plus-one-section');
-  section.style.display = this.value === 'Jah' ? 'block' : 'none';
-});
-
-// Toggle Car Section
-document.getElementById('has-car').addEventListener('change', function() {
-  const section = document.getElementById('car-section');
-  section.style.display = this.value === 'Jah' ? 'block' : 'none';
-});
-
-    // Toggle Plus One Section
-document.querySelectorAll('input[name="HasPlusOne"]').forEach(radio => {
-  radio.addEventListener('change', function() {
-    document.getElementById('plus-one-section').style.display = (this.value === 'Jah') ? 'block' : 'none';
   });
-});
 
-// Toggle Car Section
-document.querySelectorAll('input[name="HasCar"]').forEach(radio => {
-  radio.addEventListener('change', function() {
-    document.getElementById('car-section').style.display = (this.value === 'Jah') ? 'block' : 'none';
+  // 3. Toggle Car Section (Radio Logic)
+  document.querySelectorAll('input[name="HasCar"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const section = document.getElementById('car-section');
+      section.style.display = (this.value === 'Jah') ? 'block' : 'none';
+    });
   });
-});
-  </script>
+</script>
 
   
 </body>
