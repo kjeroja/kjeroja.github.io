@@ -80,69 +80,66 @@
 <!-- pulmavärvid end -->  
 
 <!-- registreerimie -->
-<form id="wedding-rsvp-form">
-  <h2>RSVP</h2>
-
-  <label class="toggle-label">Tulen</label>
-  <div class="toggle-group">
-    <input type="radio" name="Attendance" value="Jah" id="att-yes" required>
-    <label for="att-yes" class="toggle-btn yes"><i class="fa-solid fa-check"></i> Jah</label>
-    
-    <input type="radio" name="Attendance" value="Ei" id="att-no">
-    <label for="att-no" class="toggle-btn no"><i class="fa-solid fa-xmark"></i> Ei</label>
-  </div>
-
-  <input type="text" name="Name1" placeholder="Nimi" required>
-  <input type="email" name="Email1" placeholder="E-post" required>
-
-  <label class="toggle-label">Tulen sõbraga (kes on ka kutsutud)</label>
-  <div class="toggle-group">
-    <input type="radio" name="HasPlusOne" value="Jah" id="plus-yes">
-    <label for="plus-yes" class="toggle-btn yes"><i class="fa-solid fa-check"></i> Jah</label>
-    
-    <input type="radio" name="HasPlusOne" value="Ei" id="plus-no" checked>
-    <label for="plus-no" class="toggle-btn no"><i class="fa-solid fa-xmark"></i> Ei</label>
-  </div>
-
-  <div id="plus-one-section" style="display:none;">
-    <input type="text" name="Name2" placeholder="Sõbra nimi">
-    <input type="email" name="Email2" placeholder="Sõbra e-post">
-  </div>
-
-  <label class="toggle-label">Tulen autoga</label>
-  <div class="toggle-group">
-    <input type="radio" name="HasCar" value="Jah" id="car-yes">
-    <label for="car-yes" class="toggle-btn yes"><i class="fa-solid fa-check"></i> Jah</label>
-    
-    <input type="radio" name="HasCar" value="Ei" id="car-no" checked>
-    <label for="car-no" class="toggle-btn no"><i class="fa-solid fa-xmark"></i> Ei</label>
-  </div>
-
-  <div id="car-section" style="display:none;">
-    <label>Vabu istekohti</label>
-    <select name="Seats">
-      <option value="0">0</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-    </select>
-  </div>
-
-  <textarea name="Diet" placeholder="Kommentaar"></textarea>
-  
-  <button type="submit" id="submit-btn" class="btn-rsvp">SAADA VASTUS</button>
-</form>
-  <div class="rsvp-container">
+<div class="rsvp-container">
   <form id="wedding-rsvp-form">
+    <h2>RSVP</h2>
+
+    <label class="toggle-label">Tulen</label>
+    <div class="toggle-group">
+      <input type="radio" name="Attendance" value="Jah" id="att-yes" required>
+      <label for="att-yes" class="toggle-btn yes"><i class="fa-solid fa-check"></i> Jah</label>
+      
+      <input type="radio" name="Attendance" value="Ei" id="att-no">
+      <label for="att-no" class="toggle-btn no"><i class="fa-solid fa-xmark"></i> Ei</label>
+    </div>
+
+    <input type="text" name="Name1" placeholder="Nimi" required>
+    <input type="email" name="Email1" placeholder="E-post" required>
+
+    <label class="toggle-label">Tulen sõbraga (kes on ka kutsutud)</label>
+    <div class="toggle-group">
+      <input type="radio" name="HasPlusOne" value="Jah" id="plus-yes">
+      <label for="plus-yes" class="toggle-btn yes"><i class="fa-solid fa-check"></i> Jah</label>
+      
+      <input type="radio" name="HasPlusOne" value="Ei" id="plus-no" checked>
+      <label for="plus-no" class="toggle-btn no"><i class="fa-solid fa-xmark"></i> Ei</label>
+    </div>
+
+    <div id="plus-one-section" style="display:none;">
+      <input type="text" name="Name2" placeholder="Sõbra nimi">
+      <input type="email" name="Email2" placeholder="Sõbra e-post">
+    </div>
+
+    <label class="toggle-label">Tulen autoga</label>
+    <div class="toggle-group">
+      <input type="radio" name="HasCar" value="Jah" id="car-yes">
+      <label for="car-yes" class="toggle-btn yes"><i class="fa-solid fa-check"></i> Jah</label>
+      
+      <input type="radio" name="HasCar" value="Ei" id="car-no" checked>
+      <label for="car-no" class="toggle-btn no"><i class="fa-solid fa-xmark"></i> Ei</label>
+    </div>
+
+    <div id="car-section" style="display:none;">
+      <label>Vabu istekohti</label>
+      <select name="Seats">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+
+    <textarea name="Diet" placeholder="Kommentaar"></textarea>
+    
     <button type="submit" id="submit-btn" class="btn-rsvp">SAADA VASTUS</button>
   </form>
 
-  <div id="success-msg" style="display:none; color: #7e8269; text-align: center; padding: 20px;">
+  <div id="success-msg" style="display:none; text-align: center; padding: 20px; color: #7e8269;">
     <h3>Aitäh!</h3>
-    <p>Sinu vastus on salvestatud.</p>
+    <p>Sinu vastus on edukalt salvestatud.</p>
   </div>
 </div>
 <!-- registreerimine end -->  
