@@ -116,7 +116,7 @@ p {
 
 .c > div {padding-bottom: 1rem;}
 
-#wedding-rsvp-form {
+.rsvp-container {
   padding: 30px;
   border-radius: 15px;
   max-width: 450px;
@@ -223,7 +223,7 @@ Padding-top: 100px;
   grid-row-end: 5;
   }
 
-  #wedding-rsvp-form {
+  .rsvp-container {
   display: flex;
   flex-direction: column; /* This stacks Name, Attendance, and Message vertically */
   max-width: 400px;       /* Keeps it from getting too wide on big screens */
