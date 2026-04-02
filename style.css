@@ -240,6 +240,7 @@ input, select, textarea {
     grid-column: 2;
     grid-row: 1; 
     padding-left: 100px;
+    padding-bottom: 100px;
   }
 
   .right {
@@ -252,5 +253,6 @@ input, select, textarea {
     padding: 40px;
     text-align: left;
     align-self: start; /* Prevents grid stretching */
+    margin-bottom: 60px;
   }
 }
