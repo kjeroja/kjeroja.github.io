@@ -220,7 +220,7 @@ Padding-top: 100px;
   padding-bottom: 0vh;
   grid-column: 1;
   grid-row-start: 1;
-  grid-row-end: 5;
+  grid-row-end: -1;
   }
 
   .rsvp-container {
