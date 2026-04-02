@@ -1,21 +1,22 @@
 body {
   height: 100%;
-  }
+}
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Crimson Pro";
-line-height: 1.6;
-  }
+  font-family: "Crimson Pro", serif;
+  line-height: 1.6;
+}
 
+/* --- MOBILE GRID (Default) --- */
 .grid {
   display: grid;
   row-gap: 50px;
   grid-template-columns: 1fr 80vw 1fr;
   grid-template-rows: auto;
   padding-bottom: 10vh;
-  }
+}
 
 h1 {
   font-size: 4rem;
@@ -23,36 +24,56 @@ h1 {
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
-  Color: white;
+  color: white;
 }
 
-.banner p {
-color: white;
-Text-align: center;
-Grid-column: 2;
-Font-family: "Crimson Pro", serif;
-letter-spacing: 0.25em;
+/* Left Column (Green Sidebar / Mobile Header) */
+.left {
+  padding-top: 25vh;
+  padding-bottom: 45vh;
+  background-color: #7e8269;
+  grid-column: span 3;
+  grid-row: 1;
+}
+
+.left p {
+  color: white;
+  text-align: center;
+  font-family: "Crimson Pro", serif;
+  letter-spacing: 0.25em;
 }
 
 .super {
   font-family: "Playfair Display SC", serif;
   vertical-align: super;
-  font-size: 0.6em;      /* Makes the letter smaller */
-  margin-left: 2px;      /* Optional: adds a tiny bit of breathing room */
+  font-size: 0.6em;
+  margin-left: 2px;
 }
-.banner {
-  padding-top: 25vh;
-  padding-bottom: 45vh;
-  Background-color: #7e8269;
-  grid-column: span 3;
-  grid-row: 1;}
+
+/* Center Column (Text Info) */
+.center {
+  grid-column: 2;
+}
+
+/* Links inside the Center column */
+.center a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Makes the whole block clickable */
+}
+
+.center a:hover h4, 
+.center a:hover h5 {
+  text-decoration: underline;
+  color: #7e8269;
+}
 
 .d {
-  Padding-top: 20px;
+  padding-top: 20px;
 }
 
 .indent {
-Padding-left: 10px;
+  padding-left: 10px;
 }
 
 h2 {
@@ -64,7 +85,7 @@ h2 {
 h2, h3 {
   display: inline-block; 
   vertical-align: middle;
-  margin-right: 15px; /* Space between them */
+  margin-right: 15px; 
   letter-spacing: 0.25em; 
 }
 
@@ -88,35 +109,25 @@ h5 {
   color: #8A8E74;
 }
 
-/* 1. The Container (The space where the boxes live) */
 .palette {
-  display: flex;             /* The Magic: Aligns children horizontally */
-  justify-content: left;   /* Centers the entire group of boxes on the page */
-  gap: 14px;                  /* Creates space *between* the boxes */
-  margin-top: 1rem;        /* Adds space between the h2 title and the boxes */
+  display: flex;             
+  justify-content: left;   
+  gap: 14px;                 
+  margin-top: 1rem;        
 }
 
-/* 2. The Boxes Themselves */
 .color-box {
-  width: 25px;               /* The precise width of the square */
-  height: 25px;              /* The precise height (must match width to be a square) */
-  /* Optional: Add a subtle border if you have light colors (like the cream) on a white page */
-  /* border: 1px solid #e0e0e0; */
-Border-radius: 100%;
+  width: 25px;               
+  height: 25px;              
+  border-radius: 100%;
 }
 
 p {
   line-height: 1.5;
-  /*color: #333;*/
 }
 
-.a {
-  grid-column: 2;
-  }
-
-.c > div {padding-bottom: 1rem;}
-
-.rsvp-container {
+/* Right Column (RSVP Form) */
+.right {
   padding: 30px;
   border-radius: 15px;
   max-width: 450px;
@@ -131,10 +142,11 @@ input, select, textarea {
   margin: 10px 0;
   background-color: #e8e8e8;
   border-radius: 5px;
+  border: none;
 }
 
 .btn-rsvp {
-  background-color: #D5AA95; /* button */
+  background-color: #D5AA95;
   color: white;
   border: none;
   padding: 15px;
@@ -142,9 +154,13 @@ input, select, textarea {
   cursor: pointer;
   letter-spacing: 0.1em;
   border-radius: 0 25px 0 25px;
+  transition: opacity 0.3s ease;
 }
 
-/* Hide the actual radio circle */
+.btn-rsvp:hover {
+  opacity: 0.9;
+}
+
 .toggle-group input[type="radio"] {
   display: none;
 }
@@ -168,15 +184,14 @@ input, select, textarea {
   transition: all 0.2s ease;
 }
 
-/* When the "Jah" radio is checked, turn the label Sage */
 #att-yes:checked + .toggle-btn.yes,
 #plus-yes:checked + .toggle-btn.yes,
 #car-yes:checked + .toggle-btn.yes {
   background-color: #8A8E74;
   color: white;
+  border-color: #8A8E74;
 }
 
-/* When the "Ei" radio is checked, turn the label Peach/Tan */
 #att-no:checked + .toggle-btn.no,
 #plus-no:checked + .toggle-btn.no,
 #car-no:checked + .toggle-btn.no {
@@ -193,47 +208,44 @@ input, select, textarea {
   margin-top: 15px;
 }
 
-/*### DESKTOP STARTS ###*/
-@media only screen and (min-width:700px ){
 
+/* --- DESKTOP GRID --- */
+@media only screen and (min-width: 700px) {
   .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto; 
-  padding: 0;
-  grid-column-gap: 10px;
-  min-height: 100vh; 
-}
-
-.d {
-Padding-top: 100px;
-}
-
-.a {
-  grid-column: 2;
-  grid-row: auto;
-  Padding-left: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+    padding: 0;
+    grid-column-gap: 10px;
+    min-height: 100vh; 
   }
 
-.banner {
-  padding-top: 25vh;
-  padding-bottom: 0vh;
-  grid-column: 1;
-  grid-row-start: 1;
-  grid-row-end: -1;
-  height: 100%;
+  .d {
+    padding-top: 100px;
   }
 
-  .rsvp-container {
-  display: flex;
-  flex-direction: column; /* This stacks Name, Attendance, and Message vertically */
-  max-width: 400px;       /* Keeps it from getting too wide on big screens */
-  gap: 15px;              /* Adds nice spacing between inputs */
-  grid-column: 3;    /* Forces it to take up the whole width or a specific spot */
-  grid-row-start: 1;
-  padding: 40px;
-  text-align: left;
-}
+  .left {
+    padding-top: 25vh;
+    padding-bottom: 0vh;
+    grid-column: 1;
+    grid-row: 1 / -1; /* Goes from row 1 to the very bottom */
+    height: 100%;
+  }
 
-  
-}/*mediaquery closed*/
+  .center {
+    grid-column: 2;
+    grid-row: 1; 
+    padding-left: 100px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;       
+    gap: 15px;              
+    grid-column: 3;    
+    grid-row: 1;
+    padding: 40px;
+    text-align: left;
+    align-self: start; /* Prevents grid stretching */
+  }
+}
