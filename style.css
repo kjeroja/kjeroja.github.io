@@ -231,7 +231,6 @@ Padding-top: 100px;
   gap: 15px;              /* Adds nice spacing between inputs */
   grid-column: 3;    /* Forces it to take up the whole width or a specific spot */
   grid-row-start: 1;
-  grid-row-end: 5;
   padding: 40px;
   text-align: left;
 }
