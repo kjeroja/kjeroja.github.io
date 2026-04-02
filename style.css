@@ -129,12 +129,12 @@ input, select, textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #F2EBD8;
+  background-color: #e8e8e8;
   border-radius: 5px;
 }
 
 .btn-rsvp {
-  background-color: #D5AA95; /* button */
+  background-color: #8A8E74; /* button */
   color: white;
   border: none;
   padding: 15px;
