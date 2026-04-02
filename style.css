@@ -158,12 +158,12 @@ input, select, textarea {
 .toggle-btn {
   flex: 1;
   padding: 10px;
-  border: 1px solid #7e8269;
+  border: 1px solid #C4C7B1;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
   background: white;
-  color: #7e8269;
+  color: #C4C7B1;
   font-size: 0.9rem;
   transition: all 0.2s ease;
 }
@@ -172,7 +172,7 @@ input, select, textarea {
 #att-yes:checked + .toggle-btn.yes,
 #plus-yes:checked + .toggle-btn.yes,
 #car-yes:checked + .toggle-btn.yes {
-  background-color: #7e8269;
+  background-color: #C4C7B1;
   color: white;
 }
 
@@ -180,9 +180,9 @@ input, select, textarea {
 #att-no:checked + .toggle-btn.no,
 #plus-no:checked + .toggle-btn.no,
 #car-no:checked + .toggle-btn.no {
-  background-color: #D5AA95;
+  background-color: #F0D7C6;
   color: white;
-  border-color: #D5AA95;
+  border-color: #F0D7C6;
 }
 
 .toggle-label {
