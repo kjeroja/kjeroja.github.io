@@ -53,9 +53,11 @@ h1 {
 /* Center Column (Text Info) */
 .center {
   grid-column: 2;
-  display: flex;             /* Turns the column into a flexbox */
-  flex-direction: column;    /* Stacks the text blocks vertically */
-  gap: 50px;
+  display: flex;             
+  flex-direction: column;    
+  justify-content: space-between; /* THE MAGIC: Spaces items out evenly */
+  height: 100%;                   /* Tells the column to stretch the full height */
+  gap: 30px;
 }
 
 /* Links inside the Center column */
