@@ -158,12 +158,12 @@ input, select, textarea {
 .toggle-btn {
   flex: 1;
   padding: 10px;
-  border: 1px solid #C4C7B1;
+  border: 1px solid #808080;
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
   background: white;
-  color: #C4C7B1;
+  color: #808080;
   font-size: 0.9rem;
   transition: all 0.2s ease;
 }
@@ -172,7 +172,7 @@ input, select, textarea {
 #att-yes:checked + .toggle-btn.yes,
 #plus-yes:checked + .toggle-btn.yes,
 #car-yes:checked + .toggle-btn.yes {
-  background-color: #C4C7B1;
+  background-color: #8A8E74;
   color: white;
 }
 
