@@ -212,7 +212,9 @@ Padding-top: 100px;
 .a {
   grid-column: 2;
   grid-row: auto;
+  grid-template-rows: auto;
   Padding-left: 100px;
+  min-height: 100vh;
   }
 
 .banner {
@@ -221,6 +223,7 @@ Padding-top: 100px;
   grid-column: 1;
   grid-row-start: 1;
   grid-row-end: -1;
+  height: 100%;
   }
 
   .rsvp-container {
