@@ -54,6 +54,7 @@ h1 {
   opacity: 0.3;      /* Change this if you want it more or less transparent */
   z-index: 0;        
   pointer-events: none; 
+  filter: grayscale(100%);
 }
 
 
