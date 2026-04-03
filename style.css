@@ -38,11 +38,31 @@ h1 {
   overflow: hidden;
 }
 
+.left h1, 
+.left p {
+  position: relative;
+  z-index: 1; 
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  opacity: 0.3;      /* Change this if you want it more or less transparent */
+  z-index: 0;        
+  pointer-events: none; 
+}
+
+
 .left p {
   color: white;
   text-align: center;
   font-family: "Crimson Pro", serif;
   letter-spacing: 0.25em;
+  
 }
 
 .super {
